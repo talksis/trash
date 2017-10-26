@@ -1,0 +1,19 @@
+{
+    "version": "0.1.0",
+    
+    "showOutput": "always",
+    "suppressTaskName": true,
+    "_runner":"terminal",
+    "tasks": [
+        
+        {
+            "taskName": "build",
+            "command": "c:\\MinGW\\bin\\mingw32-g++.exe",
+            "args": ["-g", "-o","${fileBasenameNoExtension}", "${fileDirname}\\${fileBasenameNoExtension}.cpp","-std=c++14",
+                "&&","echo","excute",
+                "&&","${fileBasenameNoExtension}.exe"],
+            "isBuildCommand": true,
+            "isShellCommand": true
+        }
+    ]
+}
